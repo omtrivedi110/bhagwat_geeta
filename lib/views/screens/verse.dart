@@ -27,11 +27,9 @@ class Verse extends StatelessWidget {
           builder: (_, pro, __) => ListView.builder(
             itemCount: pro.allverse2.length,
             itemBuilder: (_, index) {
-              print("---------------");
               if (pro.allverse2[index].verseNumber == j &&
                   pro.allverse2[index].lang == pro.lan2 &&
                   (pro.allverse2[index].authorName == pro.author_name)) {
-                print("---------------");
                 return Column(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,

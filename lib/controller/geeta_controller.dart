@@ -20,9 +20,7 @@ class GeetaController extends ChangeNotifier {
     List demo1 = jsonDecode(data);
     List demo2 = jsonDecode(data2);
     allverse = demo1.map((e) => GeetaModal.fromMap(data: e)).toList();
-    debugPrint("--------------------------------");
     allverse2 = demo2.map((e) => GeetaModal2.fromMap(data: e)).toList();
-    debugPrint("--------------------------------");
     notifyListeners();
   }
 
