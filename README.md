@@ -1,4 +1,9 @@
+
+
+https://github.com/omtrivedi110/json/assets/131134704/a6958452-cd70-46f6-b79b-b4beea3ddc98
+
 Project Evaluation:
+
 - User satisfaction with the application’s functionality and UI/UX
 - Quality of code and project structure
 - Presentation quality and clarity of communication
@@ -13,8 +18,6 @@ Project Evaluation:
 Project Technologies:
 - Dart language
 - Flutter framework with MVC and Provider architecture
-
-https://github.com/omtrivedi110/json/assets/131134704/9c540b03-2580-4a60-9aa5-a4caed2cd471
 
 
 <img src = "https://github.com/omtrivedi110/json/assets/131134704/f7e718f6-8389-42da-9155-cd452f7fe555" width= "250px"></img>
