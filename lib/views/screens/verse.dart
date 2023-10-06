@@ -35,7 +35,11 @@ class Verse extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Card(
-                      child: Text(pro.allverse[j].text),
+                      margin: const EdgeInsets.all(5),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(pro.allverse[j].text),
+                      ),
                     ),
                     const SizedBox(
                       height: 10,
@@ -45,7 +49,7 @@ class Verse extends StatelessWidget {
                       height: 10,
                     ),
                     const Text(
-                      "Meaning ",
+                      "Meaning of the verse : ",
                       style: TextStyle(fontSize: 14),
                     ),
                     const SizedBox(
@@ -56,7 +60,13 @@ class Verse extends StatelessWidget {
                       height: 10,
                     ),
                     Card(
-                      child: Text(pro.allverse2[index].description),
+                      child: Text(
+                        pro.allverse2[index].description,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 20,
+                        ),
+                      ),
                     ),
                     const SizedBox(
                       height: 10,
@@ -72,12 +82,15 @@ class Verse extends StatelessWidget {
                           height: 40,
                           width: 70,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30),
-                              color: Colors.greenAccent),
+                            borderRadius: BorderRadius.circular(30),
+                            color: Colors.greenAccent,
+                          ),
                           child: TextButton(
                             onPressed: () {
                               pro.changeLan(
-                                  lan: 'hindi', author: 'Swami Ramsukhdas');
+                                lan: 'hindi',
+                                author: 'Swami Ramsukhdas',
+                              );
                             },
                             child: const Text("Hindi"),
                           ),
@@ -86,12 +99,15 @@ class Verse extends StatelessWidget {
                           height: 40,
                           width: 80,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30),
-                              color: Colors.greenAccent),
+                            borderRadius: BorderRadius.circular(30),
+                            color: Colors.greenAccent,
+                          ),
                           child: TextButton(
                             onPressed: () {
                               pro.changeLan(
-                                  lan: 'english', author: 'Swami Sivananda');
+                                lan: 'english',
+                                author: 'Swami Sivananda',
+                              );
                             },
                             child: const Text("english"),
                           ),

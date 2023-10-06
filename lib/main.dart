@@ -4,6 +4,7 @@ import 'package:json/controller/json_controller.dart';
 import 'package:json/utils/routes_utils.dart';
 import 'package:json/views/screens/chapter_page.dart';
 import 'package:json/views/screens/homepage.dart';
+import 'package:json/views/screens/splash_screen.dart';
 import 'package:json/views/screens/verse.dart';
 import 'package:provider/provider.dart';
 
@@ -25,10 +26,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
+      home: const Splash_screen(),
       routes: {
-        MyRoutes.home: (context) => const HomePage(),
+        // MyRoutes.home: (context) => const HomePage(),
         MyRoutes.chap: (context) => const ChapterPage(),
         MyRoutes.verse: (context) => const Verse(),
+        MyRoutes.splash: (context) => const Splash_screen(),
       },
     );
   }

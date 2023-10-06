@@ -4,4 +4,5 @@ class MyRoutes {
   static String home = "/";
   static String chap = "chapter";
   static String verse = "verse";
+  static String splash = "splash";
 }
